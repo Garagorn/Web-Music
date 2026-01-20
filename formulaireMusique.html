@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Musique</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<?php
+$titre = htmlspecialchars($titre);
+$groupe= htmlspecialchars($groupe);
+$album = htmlspecialchars($album);
+$idM = htmlspecialchars($idM);
+$action=$_GET["action"];
+
+if($action=="saisir"){
+  $corps =<<<EOT
+    <form method="post" action="index.php?action=saisir &idM={$idM}" name="form_user" >
+    <label> Titre </label>
+    <input type="text" name="titre"  value="{$titre}">
+    <span class="w3-text-red">{$erreur["titre"]}</span><br>
+    
+    <label> Groupe</label>
+    <input type="text" name="groupe" value="{$groupe}">
+    <span class="w3-text-red">{$erreur["groupe"]}</span><br>
+
+    <label> Album </label>
+    <input type="text" name="album"  value="{$album}">
+    <span class="w3-text-red">{$erreur["album"]}</span><br>
+
+    <input type="submit" name="user_valider" value="Valider" >
+  </form>
+  EOT;
+}
+
+if($action=="supprimer"){
+  $corps=<<<EOT
+  <form method="post"  action="index.php?action=supprimer &idM={$idM}" name="form_user" >
+    <h2> Voulez-vous vraiment supprimer cette Musique ?</h2>
+    <input type="submit" name="confirmation" value="Oui">
+    <input type="submit" name="confirmation" value="Non">
+    <input type="hidden" name ="idM" value="$idM">
+  </form>
+  EOT;
+}
+
+if($action=="modifier"){
+  $corps=<<<EOT
+  <form method="post"  action="index.php?action=modifier &idM={$idM} &titre={$titre} &groupe={$groupe} &album={$album}" name="form_user" >
+    <label> Nouveau Titre</label>
+    <input type="text" name="titre" value="{$titre}">
+    <span class="w3-text-red">{$erreur["titre"]}</span><br>
+ 
+    <label> Nouveau Groupe</label>
+    <input type="text" name="groupe" value="{$groupe}">
+    <span class="w3-text-red">{$erreur["groupe"]}</span><br>
+
+    <label> Nouvel Album</label>
+    <input type="text" name="album" value="{$album}">
+    <span class="w3-text-red">{$erreur["album"]}</span><br>
+    
+    <input type="submit" name="confirmation" value="Oui">
+    <input type="submit" name="confirmation" value="Non">
+  </form>
+  EOT;
+}
+
+?>
+</body>
+</html>
