@@ -48,14 +48,19 @@ Le projet repose sur une base de données relationnelle permettant :
 
 ## Captures d’écran
 
+## Accueil
 ![Accueil](screenshots/Accueil.png)
 ![Connexion](screenshots/Connexion.png)
-![Ajout](screenshots/Ajout.png)
-![Ajoutd'une musique](screenshots/AjouMusique.png)
+### Liste
 ![Liste des musiques](screenshots/Liste.png)
-![Mise à jour de la liste après ajout](screenshots/ListeUpdate.png)
-![Déails d'une musique](screenshots/Details.png)
+![Détails d'une musique](screenshots/Details.png)
+### Ajout de musique
+![Ajout](screenshots/Ajout.png)
+![Ajout d'une musique](screenshots/AjoutMusique.png)
 ![Message d'ajout](screenshots/SucccesAjout.png)
+![Mise à jour de la liste après ajout](screenshots/ListeUpdate.png)
+
+
 
 
 Auteurs :   
