@@ -57,7 +57,7 @@ Le projet repose sur une base de données relationnelle permettant :
 ### Ajout de musique
 ![Ajout](screenshots/Ajout.png)
 ![Ajout d'une musique](screenshots/AjoutMusique.png)
-![Message d'ajout](screenshots/SucccesAjout.png)
+![Message d'ajout](screenshots/SuccesAjout.png)
 ![Mise à jour de la liste après ajout](screenshots/ListeUpdate.png)
 
 
