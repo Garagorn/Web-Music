@@ -10,7 +10,7 @@ L’application n’est pas déployée publiquement, mais l’ensemble du code e
 
 ## Objectifs du projet
 
-- Construction incrémentale d'un site web conformément à l'architecture MVCR présentée en cours
+- Constructiond'un site web conformément à l'architecture vu en cours
 - Mise en place d'une base de données pour stocker les musiques
 - Mise en place d'une application web dynamique
 - Appliquer les principes de base du développement web côté serveur
